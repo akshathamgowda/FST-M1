@@ -1,0 +1,9 @@
+@Activity4
+Feature: Data Drivern test without example
+
+  @loginTest @loginSuccess
+  Scenario: Testing with correct data from inputs
+   Given the user is on the login page
+   When the user enters "admin" and "password"
+   And clicks the submit button
+   Then get the confirmation text and verify message as "Welcome Back, admin"
